@@ -226,12 +226,6 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\DeviceDll\DeviceDll\DeviceDll.csproj">
-      <Project>{918b70f6-3efa-41e7-aa2f-bb3e8672526a}</Project>
-      <Name>DeviceDll</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

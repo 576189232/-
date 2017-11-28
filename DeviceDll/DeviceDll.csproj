@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{918B70F6-3EFA-41E7-AA2F-BB3E8672526A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeviceDll</RootNamespace>
+    <AssemblyName>DeviceDll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Device\EObject.cs" />
+    <Compile Include="Device\EpObject.cs" />
+    <Compile Include="Device\EprObject.cs" />
+    <Compile Include="Device\EptObject.cs" />
+    <Compile Include="Device\FObject.cs" />
+    <Compile Include="Device\FlObject.cs" />
+    <Compile Include="Device\FsbObject.cs" />
+    <Compile Include="Device\FygObject.cs" />
+    <Compile Include="Device\IObject.cs" />
+    <Compile Include="Device\PObject.cs" />
+    <Compile Include="Device\PafObject.cs" />
+    <Compile Include="Device\PclObject.cs" />
+    <Compile Include="Device\PcoObject.cs" />
+    <Compile Include="Device\PgjObject.cs" />
+    <Compile Include="Device\PhlObject.cs" />
+    <Compile Include="Device\Phl2Object.cs" />
+    <Compile Include="Device\PjfObject.cs" />
+    <Compile Include="Device\PlObject.cs" />
+    <Compile Include="Device\PljqObject.cs" />
+    <Compile Include="Device\PlldiObject.cs" />
+    <Compile Include="Device\PlyjObject.cs" />
+    <Compile Include="Device\PpObject.cs" />
+    <Compile Include="Device\PtdObject.cs" />
+    <Compile Include="Device\Ptl2CloseObject.cs" />
+    <Compile Include="Device\Ptl2DownObject.cs" />
+    <Compile Include="Device\Ptl2UpObject.cs" />
+    <Compile Include="Device\Ptl5RightObject.cs" />
+    <Compile Include="Device\Ptl5LeftObject.cs" />
+    <Compile Include="Device\PtwObject.cs" />
+    <Compile Include="Device\PviObject.cs" />
+    <Compile Include="Device\SObject.cs" />
+    <Compile Include="Device\ViObject.cs" />
+    <Compile Include="Device\TvEObject.cs" />
+    <Compile Include="Device\TvGunObject.cs" />
+    <Compile Include="Device\TvObject.cs" />
+    <Compile Include="Device\TvBallObject.cs" />
+    <Compile Include="Device\CMObject.cs" />
+    <Compile Include="Device\CLObject.cs" />
+    <Compile Include="Device\CFObject.cs" />
+    <Compile Include="Device\MyObject.cs" />
+    <Compile Include="Device\DeviceObject.cs" />
+    <Compile Include="Device\DevicePropert.cs" />
+    <Compile Include="Device\PictruePropert.cs" />
+    <Compile Include="Device\TextPropert.cs" />
+    <Compile Include="Device\VcObject.cs" />
+    <Compile Include="Device\YxStr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowMake", "WindowMake\WindowMake.csproj", "{F863A7A7-23CF-4861-BF99-552400289B1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceDll", "C:\Users\Administrator\Documents\Visual Studio 2015\Projects\DeviceDll\DeviceDll\DeviceDll.csproj", "{918B70F6-3EFA-41E7-AA2F-BB3E8672526A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceDll", "DeviceDll\DeviceDll.csproj", "{918B70F6-3EFA-41E7-AA2F-BB3E8672526A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
