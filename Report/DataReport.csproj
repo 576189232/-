@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65AB7019-F3AE-4920-A7DC-6F771D44AC8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataReport</RootNamespace>
+    <AssemblyName>DataReport</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>C73F388E31EC992F4BB88327507BE47F204AC5A5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>DataCalc_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>C:\Users\Administrator\Desktop\DataCalcJCH\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>查询分析器</ProductName>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FLASH blackedition Icon 12.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSharpWinTmplate">
+      <HintPath>Dll\CSharpWinTmplate.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="PushPanel">
+      <HintPath>Dll\PushPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.UI.Controls">
+      <HintPath>D:\Program Files (x86)\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gAppData.cs" />
+    <Compile Include="LoginContrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginContrl.Designer.cs">
+      <DependentUpon>LoginContrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginContrl.resx">
+      <DependentUpon>LoginContrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormControl.resx">
+      <DependentUpon>ReportFormControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormTemp.resx">
+      <DependentUpon>ReportFormTemp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uselog.resx">
+      <DependentUpon>Uselog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnvironmentDataControl.resx">
+      <DependentUpon>EnvironmentDataControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waitFrm.resx">
+      <DependentUpon>waitFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表\CO-VI-风速-光检日月年报表.rdlc" />
+    <EmbeddedResource Include="报表\CO检测数据表.rdlc" />
+    <EmbeddedResource Include="报表\VI检测数据表.rdlc" />
+    <EmbeddedResource Include="报表\值班记录表.rdlc" />
+    <EmbeddedResource Include="报表\光强检测数据表.rdlc" />
+    <EmbeddedResource Include="报表\情报板下发记录表.rdlc" />
+    <EmbeddedResource Include="报表\报警记录表.rdlc" />
+    <EmbeddedResource Include="报表\操作记录表.rdlc" />
+    <EmbeddedResource Include="报表\模式更改记录表.rdlc" />
+    <EmbeddedResource Include="报表\气象仪检测数据表.rdlc" />
+    <EmbeddedResource Include="报表\照明数据表.rdlc" />
+    <EmbeddedResource Include="报表\策略操作记录表.rdlc" />
+    <EmbeddedResource Include="报表\设备运行状态表.rdlc" />
+    <EmbeddedResource Include="报表\诱导屏下发记录表.rdlc" />
+    <EmbeddedResource Include="报表\车检仪检测数据表.rdlc" />
+    <EmbeddedResource Include="报表\车检数据表.rdlc" />
+    <EmbeddedResource Include="报表\预案操作记录表.rdlc" />
+    <EmbeddedResource Include="报表\风机数据表.rdlc" />
+    <EmbeddedResource Include="报表\风速检测数据表.rdlc" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="..\WindowsView\App.config">
+      <Link>App.config</Link>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportFormControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportFormControl.Designer.cs">
+      <DependentUpon>ReportFormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFormTemp.Designer.cs">
+      <DependentUpon>ReportFormTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Uselog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uselog.Designer.cs">
+      <DependentUpon>Uselog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnvironmentDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnvironmentDataControl.Designer.cs">
+      <DependentUpon>EnvironmentDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="waitFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="waitFrm.Designer.cs">
+      <DependentUpon>waitFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表\COVI风速光检日月年报表集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>COVI风速光检日月年报表集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\CO检测数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CO检测数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\VI检测数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VI检测数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\值班记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>值班记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\光强检测数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>光强检测数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\情报板下发记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>情报板下发记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\报警记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>报警记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\操作记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>操作记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\模式更改记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>模式更改记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\气象仪检测数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>气象仪检测数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\照明数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>照明数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\策略操作记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>策略操作记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\设备运行状态集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>设备运行状态集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\诱导屏下发记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>诱导屏下发记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\车检仪检测数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>车检仪检测数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\车检数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>车检数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\预案操作记录集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>预案操作记录集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\风机数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>风机数据集.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="报表\风速检测数据集.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>风速检测数据集.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataCalc_TemporaryKey.pfx" />
+    <None Include="报表\COVI风速光检日月年报表集.xsc">
+      <DependentUpon>COVI风速光检日月年报表集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\COVI风速光检日月年报表集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>COVI风速光检日月年报表集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\COVI风速光检日月年报表集.xss">
+      <DependentUpon>COVI风速光检日月年报表集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\CO检测数据集.xsc">
+      <DependentUpon>CO检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\CO检测数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CO检测数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\CO检测数据集.xss">
+      <DependentUpon>CO检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\VI检测数据集.xsc">
+      <DependentUpon>VI检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\VI检测数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VI检测数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\VI检测数据集.xss">
+      <DependentUpon>VI检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\值班记录集.xsc">
+      <DependentUpon>值班记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\值班记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>值班记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\值班记录集.xss">
+      <DependentUpon>值班记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\光强检测数据集.xsc">
+      <DependentUpon>光强检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\光强检测数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>光强检测数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\光强检测数据集.xss">
+      <DependentUpon>光强检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\情报板下发记录集.xsc">
+      <DependentUpon>情报板下发记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\情报板下发记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>情报板下发记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\情报板下发记录集.xss">
+      <DependentUpon>情报板下发记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\报警记录集.xsc">
+      <DependentUpon>报警记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\报警记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>报警记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\报警记录集.xss">
+      <DependentUpon>报警记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\操作记录集.xsc">
+      <DependentUpon>操作记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\操作记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>操作记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\操作记录集.xss">
+      <DependentUpon>操作记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\模式更改记录集.xsc">
+      <DependentUpon>模式更改记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\模式更改记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>模式更改记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\模式更改记录集.xss">
+      <DependentUpon>模式更改记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\气象仪检测数据集.xsc">
+      <DependentUpon>气象仪检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\气象仪检测数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>气象仪检测数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\气象仪检测数据集.xss">
+      <DependentUpon>气象仪检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\照明数据集.xsc">
+      <DependentUpon>照明数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\照明数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>照明数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\照明数据集.xss">
+      <DependentUpon>照明数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\策略操作记录集.xsc">
+      <DependentUpon>策略操作记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\策略操作记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>策略操作记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\策略操作记录集.xss">
+      <DependentUpon>策略操作记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\设备运行状态集.xsc">
+      <DependentUpon>设备运行状态集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\设备运行状态集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>设备运行状态集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\设备运行状态集.xss">
+      <DependentUpon>设备运行状态集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\诱导屏下发记录集.xsc">
+      <DependentUpon>诱导屏下发记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\诱导屏下发记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>诱导屏下发记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\诱导屏下发记录集.xss">
+      <DependentUpon>诱导屏下发记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\车检仪检测数据集.xsc">
+      <DependentUpon>车检仪检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\车检仪检测数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>车检仪检测数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\车检仪检测数据集.xss">
+      <DependentUpon>车检仪检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\车检数据集.xsc">
+      <DependentUpon>车检数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\车检数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>车检数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\车检数据集.xss">
+      <DependentUpon>车检数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\预案操作记录集.xsc">
+      <DependentUpon>预案操作记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\预案操作记录集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>预案操作记录集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\预案操作记录集.xss">
+      <DependentUpon>预案操作记录集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\风机数据集.xsc">
+      <DependentUpon>风机数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\风机数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>风机数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\风机数据集.xss">
+      <DependentUpon>风机数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\风速检测数据集.xsc">
+      <DependentUpon>风速检测数据集.xsd</DependentUpon>
+    </None>
+    <None Include="报表\风速检测数据集.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>风速检测数据集.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="报表\风速检测数据集.xss">
+      <DependentUpon>风速检测数据集.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.8.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2008 报表查看器</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FLASH blackedition Icon 12.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="光强检测数据集" targetNamespace="http://tempuri.org/光强检测数据集.xsd" xmlns:mstns="http://tempuri.org/光强检测数据集.xsd" xmlns="http://tempuri.org/光强检测数据集.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SHMonitor_Preplan0ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SHMonitor_Preplan0ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DataReport.Properties.Settings.GlobalReference.Default.SHMonitor_Preplan0ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="光检VIEWTableAdapter" GeneratorDataComponentClassName="光检VIEWTableAdapter" Name="光检VIEW" UserDataComponentName="光检VIEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SHMonitor_Preplan0ConnectionString (Settings)" DbObjectName="SHMonitor_Preplan0.dbo.光检VIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from 光检VIEW</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="时间日期" DataSetColumn="时间日期" />
+              <Mapping SourceColumn="对象号" DataSetColumn="对象号" />
+              <Mapping SourceColumn="对象名" DataSetColumn="对象名" />
+              <Mapping SourceColumn="对象类型" DataSetColumn="对象类型" />
+              <Mapping SourceColumn="检测值" DataSetColumn="检测值" />
+              <Mapping SourceColumn="rowguid" DataSetColumn="rowguid" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="光强检测数据集" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="光强检测数据集" msprop:Generator_UserDSName="光强检测数据集">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="光检VIEW" msprop:Generator_TableClassName="光检VIEWDataTable" msprop:Generator_RowEvArgName="光检VIEWRowChangeEvent" msprop:Generator_TableVarName="table光检VIEW" msprop:Generator_TablePropName="光检VIEW" msprop:Generator_RowDeletingName="光检VIEWRowDeleting" msprop:Generator_UserTableName="光检VIEW" msprop:Generator_RowChangingName="光检VIEWRowChanging" msprop:Generator_RowDeletedName="光检VIEWRowDeleted" msprop:Generator_RowChangedName="光检VIEWRowChanged" msprop:Generator_RowEvHandlerName="光检VIEWRowChangeEventHandler" msprop:Generator_RowClassName="光检VIEWRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="时间日期" msprop:Generator_ColumnVarNameInTable="column时间日期" msprop:Generator_ColumnPropNameInRow="时间日期" msprop:Generator_ColumnPropNameInTable="时间日期Column" msprop:Generator_UserColumnName="时间日期" type="xs:dateTime" />
+              <xs:element name="对象号" msprop:Generator_ColumnVarNameInTable="column对象号" msprop:Generator_ColumnPropNameInRow="对象号" msprop:Generator_ColumnPropNameInTable="对象号Column" msprop:Generator_UserColumnName="对象号" type="xs:int" />
+              <xs:element name="对象名" msprop:Generator_ColumnVarNameInTable="column对象名" msprop:Generator_ColumnPropNameInRow="对象名" msprop:Generator_ColumnPropNameInTable="对象名Column" msprop:Generator_UserColumnName="对象名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="对象类型" msprop:Generator_ColumnVarNameInTable="column对象类型" msprop:Generator_ColumnPropNameInRow="对象类型" msprop:Generator_ColumnPropNameInTable="对象类型Column" msprop:Generator_UserColumnName="对象类型" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="检测值" msprop:Generator_ColumnVarNameInTable="column检测值" msprop:Generator_ColumnPropNameInRow="检测值" msprop:Generator_ColumnPropNameInTable="检测值Column" msprop:Generator_UserColumnName="检测值" type="xs:decimal" />
+              <xs:element name="rowguid" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnrowguid" msprop:Generator_ColumnPropNameInRow="rowguid" msprop:Generator_ColumnPropNameInTable="rowguidColumn" msprop:Generator_UserColumnName="rowguid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

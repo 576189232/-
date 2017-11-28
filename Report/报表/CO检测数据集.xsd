@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CO检测数据集" targetNamespace="http://tempuri.org/CO检测数据集.xsd" xmlns:mstns="http://tempuri.org/CO检测数据集.xsd" xmlns="http://tempuri.org/CO检测数据集.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SHMonitor_Preplan0ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SHMonitor_Preplan0ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DataReport.Properties.Settings.GlobalReference.Default.SHMonitor_Preplan0ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="COVIEWTableAdapter" GeneratorDataComponentClassName="COVIEWTableAdapter" Name="COVIEW" UserDataComponentName="COVIEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SHMonitor_Preplan0ConnectionString (Settings)" DbObjectName="SHMonitor_Preplan0.dbo.COVIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from coview</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="时间日期" DataSetColumn="时间日期" />
+              <Mapping SourceColumn="对象号" DataSetColumn="对象号" />
+              <Mapping SourceColumn="对象名" DataSetColumn="对象名" />
+              <Mapping SourceColumn="对象类型" DataSetColumn="对象类型" />
+              <Mapping SourceColumn="检测值" DataSetColumn="检测值" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CO检测数据集" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CO检测数据集" msprop:Generator_UserDSName="CO检测数据集">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="COVIEW" msprop:Generator_TableClassName="COVIEWDataTable" msprop:Generator_RowEvArgName="COVIEWRowChangeEvent" msprop:Generator_TableVarName="tableCOVIEW" msprop:Generator_TablePropName="COVIEW" msprop:Generator_RowDeletingName="COVIEWRowDeleting" msprop:Generator_UserTableName="COVIEW" msprop:Generator_RowChangingName="COVIEWRowChanging" msprop:Generator_RowDeletedName="COVIEWRowDeleted" msprop:Generator_RowChangedName="COVIEWRowChanged" msprop:Generator_RowEvHandlerName="COVIEWRowChangeEventHandler" msprop:Generator_RowClassName="COVIEWRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="时间日期" msprop:Generator_ColumnVarNameInTable="column时间日期" msprop:Generator_ColumnPropNameInRow="时间日期" msprop:Generator_ColumnPropNameInTable="时间日期Column" msprop:Generator_UserColumnName="时间日期" type="xs:dateTime" />
+              <xs:element name="对象号" msprop:Generator_ColumnVarNameInTable="column对象号" msprop:Generator_ColumnPropNameInRow="对象号" msprop:Generator_ColumnPropNameInTable="对象号Column" msprop:Generator_UserColumnName="对象号" type="xs:int" />
+              <xs:element name="对象名" msprop:Generator_ColumnVarNameInTable="column对象名" msprop:Generator_ColumnPropNameInRow="对象名" msprop:Generator_ColumnPropNameInTable="对象名Column" msprop:Generator_UserColumnName="对象名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="对象类型" msprop:Generator_ColumnVarNameInTable="column对象类型" msprop:Generator_ColumnPropNameInRow="对象类型" msprop:Generator_ColumnPropNameInTable="对象类型Column" msprop:Generator_UserColumnName="对象类型" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="检测值" msprop:Generator_ColumnVarNameInTable="column检测值" msprop:Generator_ColumnPropNameInRow="检测值" msprop:Generator_ColumnPropNameInTable="检测值Column" msprop:Generator_UserColumnName="检测值" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

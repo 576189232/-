@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="策略操作记录集" targetNamespace="http://tempuri.org/策略操作记录集.xsd" xmlns:mstns="http://tempuri.org/策略操作记录集.xsd" xmlns="http://tempuri.org/策略操作记录集.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SHMonitor_Preplan0ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SHMonitor_Preplan0ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DataReport.Properties.Settings.GlobalReference.Default.SHMonitor_Preplan0ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="策略操作VIEWTableAdapter" GeneratorDataComponentClassName="策略操作VIEWTableAdapter" Name="策略操作VIEW" UserDataComponentName="策略操作VIEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SHMonitor_Preplan0ConnectionString (Settings)" DbObjectName="SHMonitor_Preplan0.dbo.策略操作VIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select *
+from 策略操作VIEW</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="时间日期" DataSetColumn="时间日期" />
+              <Mapping SourceColumn="策略名称" DataSetColumn="策略名称" />
+              <Mapping SourceColumn="执行类型" DataSetColumn="执行类型" />
+              <Mapping SourceColumn="备注" DataSetColumn="备注" />
+              <Mapping SourceColumn="策略类型" DataSetColumn="策略类型" />
+              <Mapping SourceColumn="姓名" DataSetColumn="姓名" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="策略操作记录集" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="策略操作记录集" msprop:Generator_UserDSName="策略操作记录集">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="策略操作VIEW" msprop:Generator_TableClassName="策略操作VIEWDataTable" msprop:Generator_RowEvArgName="策略操作VIEWRowChangeEvent" msprop:Generator_TableVarName="table策略操作VIEW" msprop:Generator_TablePropName="策略操作VIEW" msprop:Generator_RowDeletingName="策略操作VIEWRowDeleting" msprop:Generator_UserTableName="策略操作VIEW" msprop:Generator_RowChangingName="策略操作VIEWRowChanging" msprop:Generator_RowDeletedName="策略操作VIEWRowDeleted" msprop:Generator_RowChangedName="策略操作VIEWRowChanged" msprop:Generator_RowEvHandlerName="策略操作VIEWRowChangeEventHandler" msprop:Generator_RowClassName="策略操作VIEWRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="时间日期" msprop:Generator_ColumnVarNameInTable="column时间日期" msprop:Generator_ColumnPropNameInRow="时间日期" msprop:Generator_ColumnPropNameInTable="时间日期Column" msprop:Generator_UserColumnName="时间日期" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="策略名称" msprop:Generator_ColumnVarNameInTable="column策略名称" msprop:Generator_ColumnPropNameInRow="策略名称" msprop:Generator_ColumnPropNameInTable="策略名称Column" msprop:Generator_UserColumnName="策略名称" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="执行类型" msprop:Generator_ColumnVarNameInTable="column执行类型" msprop:Generator_ColumnPropNameInRow="执行类型" msprop:Generator_ColumnPropNameInTable="执行类型Column" msprop:Generator_UserColumnName="执行类型" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="备注" msprop:Generator_ColumnVarNameInTable="column备注" msprop:Generator_ColumnPropNameInRow="备注" msprop:Generator_ColumnPropNameInTable="备注Column" msprop:Generator_UserColumnName="备注" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="策略类型" msprop:Generator_ColumnVarNameInTable="column策略类型" msprop:Generator_ColumnPropNameInRow="策略类型" msprop:Generator_ColumnPropNameInTable="策略类型Column" msprop:Generator_UserColumnName="策略类型" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="姓名" msprop:Generator_ColumnVarNameInTable="column姓名" msprop:Generator_ColumnPropNameInRow="姓名" msprop:Generator_ColumnPropNameInTable="姓名Column" msprop:Generator_UserColumnName="姓名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
